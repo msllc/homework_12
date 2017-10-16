@@ -1,0 +1,209 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Таблицы и формы</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    table {
+      border-collapse: collapse;
+      border: 1px solid grey;
+    }
+    th {
+      border: 1px solid grey;
+    }
+    td {
+      border: 1px solid grey;
+      padding: 4px;
+    }
+    th,
+    td {
+      border: 1px solid grey;
+    }
+    body {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <input type="url" required placeholder="URL">
+  </form>
+  <h1>Спряжение глаголов</h1>
+  <h3>Поиск по сайту</h3>
+  <form>
+    <input type="search" name="search">
+  </form>
+  <h2>Регистрация</h2>
+  <form>
+    <div>
+      <p>
+        <label><input type="email" required placeholder="e-mail"></label>
+      </p>
+      <p>
+        <label><input type="tel" required placeholder="numero de telephone"></label>
+      </p>
+      <p>
+        <label><input type="text" required placeholder="pronome"></label>
+      </p>
+      <p>
+        <select name="country" size="1">
+          <option value="1">Россия</option>
+          <option value="2">СНГ</option>
+          <option value="3">Другое</option>
+        </select>
+      </p>
+      <p>
+        <label>Пароль<input type="password" required placeholder="mot de passe"></label>
+      </p>
+      <p>
+        <input type="reset" name="reset">
+      </p>
+      <p>
+        <label>Запомнить пароль
+          <input type="checkbox" name="Запомнить пароль" value="1">
+        </label>
+      </p>
+      <input type="button" value="OK">
+    </div>
+  </form>
+
+  <table>
+    <caption>Таблица спряжения неправильных глаголов франузского языка</caption>
+    <thead>
+      <tr>
+        <th>Le Pronome (Местоимение)</th>
+        <th>avoir (иметь)</th>
+        <th>etre (быть)</th>
+        <th>aller (идти)</th>
+        <th>vouloir (хотеть)</th>
+        <th>pouvoir (мочь)</th>
+        <th>venir (приходить)</th>
+        <th colspan="3">Les verbes pronomineaux (возвратные глаголы)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>je (j')</td>
+        <td>ai</td>
+        <td>suis</td>
+        <td>vais</td>
+        <td rowspan="2">veux</td>
+        <td rowspan="2">peux</td>
+        <td rowspan="2">viens</td>
+        <td>me</td>
+        <td>leve</td>
+        <td>lave</td>
+      </tr>
+      <tr>
+        <td>tu</td>
+        <td>as</td>
+        <td>es</td>
+        <td>vas</td>
+        <td>te</td>
+        <td>leves</td>
+        <td>laves</td>
+      </tr>
+      <tr>
+        <td>il</td>
+        <td rowspan="3">a</td>
+        <td rowspan="3">est</td>
+        <td rowspan="3">va</td>
+        <td rowspan="3">veut</td>
+        <td rowspan="3">peut</td>
+        <td rowspan="3">vient</td>
+        <td rowspan="3">se</td>
+        <td rowspan="3">leve</td>
+        <td rowspan="3">lave</td>
+      </tr>
+      <tr>
+        <td>elle</td>
+      </tr>
+      <tr>
+        <td>on</td>
+      </tr>
+      <tr>
+        <td>nous</td>
+        <td>avons</td>
+        <td>sommes</td>
+        <td>allons</td>
+        <td>voulons</td>
+        <td>pouvons</td>
+        <td>venons</td>
+        <td>nous</td>
+        <td>levons</td>
+        <td>levez</td>
+      </tr>
+      <tr>
+        <td>vous</td>
+        <td>avez</td>
+        <td>etes</td>
+        <td>allez</td>
+        <td>voulez</td>
+        <td>pouvez</td>
+        <td>venez</td>
+        <td>vous</td>
+        <td>levez</td>
+        <td>lavez</td>
+      </tr>
+      <tr>
+        <td>ils</td>
+        <td>ont</td>
+        <td>sont</td>
+        <td>vont</td>
+        <td>veulent</td>
+        <td>peuvent</td>
+        <td>viennent</td>
+        <td>se</td>
+        <td>levent</td>
+        <td>lavent</td>
+      </tr>
+      <tr>
+        <td>elles</td>
+        <td>ont</td>
+        <td>sont</td>
+        <td>vont</td>
+        <td>veulent</td>
+        <td>peuvent</td>
+        <td>viennent</td>
+        <td>se</td>
+        <td>levent</td>
+        <td>lavent</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Задания</h3>
+  <form>
+    <p><b>Выбрать номер варианта</b>
+    </p>
+    <p>
+      <label><input type="number" name="numero" min="1" max="4" step="1"></label>
+    </p>
+    <p><b>1.Vouloir au 3-me personne masculin (sing.)</b>
+    </p>
+    <p>
+      <label>veut
+        <input type="radio" name="radio" value="1">
+      </label>
+    </p>
+    <p>
+      <label>veulent
+        <input type="radio" name="radio" value="1">
+      </label>
+    </p>
+    <p><b>2.Предложения с использованием неправильных глаголов</b>
+    </p>
+    <p>
+      <label><b>3.Загрузить эссе</b>
+        <br>
+        <input type="file" name="file">
+      </label>
+    </p>
+    <p>
+      <input type="range" name="range">
+    </p>
+  </form>
+</body>
+
+</html>
